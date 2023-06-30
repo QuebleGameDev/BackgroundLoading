@@ -1,12 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2krt1uvlkrrx"]
-
-[ext_resource type="Script" path="res://Game States/Main Menu/main_menu.gd" id="1_orel0"]
+[gd_scene load_steps=2 format=3 uid="uid://d2krt1uvlkrrx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ip1gk"]
 bg_color = Color(0.439216, 0.498039, 0.501961, 1)
 
 [node name="main_menu" type="Node2D"]
-script = ExtResource("1_orel0")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -58,5 +55,3 @@ layout_mode = 2
 size_flags_vertical = 2
 theme_override_font_sizes/font_size = 25
 text = "Play"
-
-[connection signal="pressed" from="CanvasLayer/GUI/Panel/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]

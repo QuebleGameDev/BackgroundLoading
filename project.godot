@@ -15,10 +15,6 @@ run/main_scene="res://Game States/Main Menu/main_menu.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-Global="*res://Autoloads/global.gd"
-
 [display]
 
 window/stretch/mode="viewport"
