@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Game States/Main Menu/main_menu.gd" id="1_orel0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ip1gk"]
-bg_color = Color(0.152941, 0.192157, 0.266667, 1)
+bg_color = Color(0.439216, 0.498039, 0.501961, 1)
 
 [node name="main_menu" type="Node2D"]
 script = ExtResource("1_orel0")

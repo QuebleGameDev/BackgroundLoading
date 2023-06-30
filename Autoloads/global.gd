@@ -55,7 +55,7 @@ func load_scene(current_scene, next_scene):
 
 			1: # THREAD_LOAD_IN_PROGRESS
 				# Update progress bar value on loading screen
-				loading_scene_instance.update_load_progress_bar(load_status)
+				loading_scene_instance.get_node("Control/load_ProgressBar").value = load_progress[0]
 
 			2: # THREAD_LOAD_FAILED
 				print("error: Loading failed!")
@@ -65,5 +65,8 @@ func load_scene(current_scene, next_scene):
 				# Scene is loaded, now create an instance and add it as a child
 				var next_scene_instance = ResourceLoader.load_threaded_get(load_path).instantiate()
 				get_tree().get_root().call_deferred("add_child", next_scene_instance)
+
+				# Close loading screen
+				loading_scene_instance.fade_out_loading_screen()
 				return
 #--------------------------------------------------------

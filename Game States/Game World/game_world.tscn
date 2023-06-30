@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://le1x1m244rpp"]
 
 [node name="game_world" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 426.0
+offset_top = 230.0
+offset_right = 739.0
+offset_bottom = 308.0
+theme_override_font_sizes/font_size = 45
+text = "It worked!!!"
+horizontal_alignment = 1
+vertical_alignment = 1

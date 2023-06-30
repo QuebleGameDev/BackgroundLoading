@@ -3,10 +3,10 @@ extends CanvasLayer
 
 signal safe_to_load
 
-@onready var load_progressBar = $load_ProgressBar
-
-func update_load_progress_bar(new_value : float):
-	load_progressBar.value = new_value
+@onready var animPlayer = $AnimationPlayer
 
 
-# NEED TO FREE SELF!!!
+func fade_out_loading_screen():
+	animPlayer.play("fade_out")
+	await animPlayer.animation_finished
+	queue_free()
